@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Design London</title>
+    <!-- tailwindcss cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- particles.js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- swiper's css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <style>
+      :root {
+        --gradient-color-1: #fe802d;
+        --gradient-color-2: #fe223c;
+        --gradient-color-3: #dd097d;
+        --gradient-color-4: #ac0bd9;
+      }
+
+      canvas {
+        display: block;
+        vertical-align: bottom;
+      }
+
+      #particles-js {
+        position: relative;
+        width: 100%;
+        height: 93vh;
+        background-color: #f1ebec00;
+        background: linear-gradient(
+          to top right,
+          var(--gradient-color-1) 15%,
+          var(--gradient-color-2) 40%,
+          var(--gradient-color-3) 70%,
+          var(--gradient-color-4) 93%
+        );
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+      }
+
+      .border-image {
+        border-image: linear-gradient(
+            to bottom right,
+            var(--gradient-color-1) 0%,
+            var(--gradient-color-2) 35%,
+            var(--gradient-color-3) 70%,
+            var(--gradient-color-4) 100%
+          )
+          1;
+      }
+
+      /* swiper css */
+      .mySwiper {
+        position: relative;
+        margin-top: 30px;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      @media (min-width: 768px) {
+        #particles-js {
+          height: 100vh;
+        }
+
+        .swiper {
+          width: 40%;
+          margin: 30px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header
+      class="absolute z-10 text-white p-5 w-full flex justify-between text-2xl md:p-7"
+    >
+      <div class="logo flex items-center border h-7 gap-1">
+        <img src="assets/images/logo.jpeg" alt="" class="h-7" />
+        <h5 class="text-xs tracking-[4px] px-1.5">CREATIVE</h5>
+      </div>
+      <i class="fa-solid fa-bars-staggered"></i>
+    </header>
+
+    <!-- main -->
+    <main>
+      <!-- particles.js container -->
+      <div class="hero-section text-white relative">
+        <div id="particles-js"></div>
+        <div
+          class="hero-section-info absolute top-[18%] left-3 flex flex-col gap-5 px-2 md:top-[25%] md:px-12 xl:px-32"
+        >
+          <h1 class="text-4xl font-medium sm:tracking-wider md:text-[40px]">
+            AWARD WINNING WEB DESIGN AGENCY
+          </h1>
+          <h3 class="text-[17px] md:text-xl">
+            We are an award-winning <b>London based web design agency</b>,
+            focused on creating bespoke & interactive web experiences for
+            aspiring & established businesses and enterprises.
+          </h3>
+          <span class="flex flex-wrap gap-2 text-sm md:text-[16px] md:gap-8">
+            <button
+              class="border-b-2 px-8 py-2.5 hover:border-2 cursor-pointer tracking-wider"
+            >
+              VIEW OUR PORTFOLIO
+            </button>
+            <button
+              class="border-b-2 px-10 py-2.5 hover:border-2 cursor-pointer tracking-wider"
+            >
+              START A PROJECT
+            </button>
+          </span>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          class="absolute -bottom-7 lg:-bottom-12 xl:-bottom-28"
+        >
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,96L120,112C240,128,480,160,720,154.7C960,149,1200,107,1320,85.3L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+          ></path>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          class="absolute bottom-3 md:bottom-7 lg:bottom-5 xl:-bottom-7"
+        >
+          <path
+            fill="#f3f4f5"
+            fill-opacity="0.3"
+            d="M0,32L60,64C120,96,240,160,360,192C480,224,600,224,720,213.3C840,203,960,181,1080,176C1200,171,1320,181,1380,186.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+          ></path>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          class="absolute bottom-0 md:bottom-5 lg:bottom-6 xl:-bottom-4"
+        >
+          <path
+            fill="#f3f4f5"
+            fill-opacity="0.4"
+            d="M0,96L60,122.7C120,149,240,203,360,213.3C480,224,600,192,720,197.3C840,203,960,245,1080,224C1200,203,1320,117,1380,74.7L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+
+      <!-- about us section -->
+      <div
+        class="about-us-section flex flex-wrap-reverse gap-12 mt-14 px-5 md:px-14 xl:mt-28 xl:px-24 lg:items-center"
+      >
+        <div class="about-us-info flex flex-col gap-2 lg:w-[43%]">
+          <h4 class="text-stone-700 font-light tracking-wider md:text-[16px]">
+            A LEADING LONDON WEB DESIGN AGENCY
+          </h4>
+          <h2
+            class="text-2xl tracking-widest font-semibold bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent md:text-[25px]"
+          >
+            CREATIVE BRAND DESIGN
+          </h2>
+          <p class="mt-2 text-[13px] text-stone-500 md:text-sm">
+            We are an award-winning <b>London based web design agency</b>,
+            focused on creating bespoke & interactive web experiences for
+            aspiring & established businesses and enterprises.
+          </p>
+          <p class="text-[13px] text-stone-500 md:text-sm">
+            Our collaborative, phased approach considers all aspects of web
+            design & branding, SEO optimization, interactivity, and IJI/UX to
+            deliver industry leading solutions.
+          </p>
+          <p class="text-[13px] text-stone-500 md:text-sm">
+            We specialise on high performance immersive digital experiences
+            aimed at delivering our clients a competitive advantage and
+            effective ROI on their investment.
+          </p>
+          <button
+            class="text-stone-400 tracking-wider w-fit px-16 py-1.5 mt-7 border-[3px] border-image rounded-md cursor-pointer md:py-2"
+          >
+            ABOUT US
+          </button>
+        </div>
+        <div class="images flex flex-wrap justify-center lg:w-[50%]">
+          <img
+            src="assets/images/about-us-image.jpg"
+            alt=""
+            class="w-[45%] relative z-10 lg:h-[32%]"
+          />
+          <video
+            src="assets/videos/about-us-video-1.mp4"
+            autoplay
+            loop
+            muted
+            class="w-[45%] relative z-30 -left-5 top-2.5 border-none"
+          ></video>
+          <video
+            src="assets/videos/about-us-video-2.mp4"
+            autoplay
+            loop
+            muted
+            class="w-[45%] relative left-4 -top-1.5 border-none xl:-top-3"
+          ></video>
+          <video
+            src="assets/videos/about-us-video-3.mp4"
+            autoplay
+            loop
+            muted
+            class="w-[45%] relative z-20 -left-1 top-0.5 border-none"
+          ></video>
+        </div>
+      </div>
+
+      <!-- projects-section -->
+      <div
+        class="projects-section mt-20 py-8 flex flex-col items-center relative bg-[#f3f4f5] md:mt-32 xl:py-0 xl:mt-48"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          class="absolute -z-10 -top-12 -rotate-3 md:-top-28 xl:-top-40"
+        >
+          <path
+            fill="#f3f4f5"
+            fill-opacity="1"
+            d="M0,96L60,106.7C120,117,240,139,360,128C480,117,600,75,720,69.3C840,64,960,96,1080,101.3C1200,107,1320,85,1380,74.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+          ></path>
+        </svg>
+        <h4 class="text-[14px] tracking-widest text-stone-500">
+          RECENT WEB DESIGN PROJECTS
+        </h4>
+        <h2
+          class="text-center mt-2 px-5 text-2xl tracking-widest font-semibold bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent"
+        >
+          BEAUTIFUL & INTERACTIVE WEB DESIGN
+        </h2>
+        <div class="projects mt-8 md:flex md:flex-wrap lg:flex-nowrap">
+          <div class="project relative">
+            <img
+              src="assets/images/Project-1.webp"
+              alt=""
+              class="h-60 w-full object-cover brightness-75 md:w-[50vw]"
+            />
+            <div class="project-info absolute z-10 bottom-0 p-6 text-white">
+              <h5 class="text-2xl font-semibold tracking-wider">
+                GIBRALTAR NATURE RESERVE
+              </h5>
+              <h6 class="text-[13px]">Design / E-commerce / Hosting</h6>
+            </div>
+          </div>
+          <div class="project relative">
+            <img
+              src="assets/images/Project-2.webp"
+              alt=""
+              class="h-60 w-full object-cover brightness-75 md:w-[50vw]"
+            />
+            <div class="project-info absolute z-10 bottom-0 p-6 text-white">
+              <h5 class="text-2xl font-semibold tracking-wider">FIRST JETS</h5>
+              <h6 class="text-[13px]">Brand Identity \ Design \ Development</h6>
+            </div>
+          </div>
+          <div class="project relative">
+            <img
+              src="assets/images/Project-3.webp"
+              alt=""
+              class="h-60 w-full object-cover brightness-75 md:w-[50vw]"
+            />
+            <div class="project-info absolute z-10 bottom-0 p-6 text-white">
+              <h5 class="text-2xl font-semibold tracking-wider">
+                4 MEDIA GROUP
+              </h5>
+              <h6 class="text-[13px]">Design \ Development</h6>
+            </div>
+          </div>
+          <div class="project relative">
+            <img
+              src="assets/images/Project-4.webp"
+              alt=""
+              class="h-60 w-full object-cover brightness-75 md:w-[50vw]"
+            />
+            <div class="project-info absolute z-10 bottom-0 p-6 text-white">
+              <h5 class="text-2xl font-semibold tracking-wider">INTERCOUNTY</h5>
+              <h6 class="text-[13px]">Design / Development / Hosting</h6>
+            </div>
+          </div>
+        </div>
+        <button
+          class="text-stone-400 tracking-wider px-12 py-1.5 mt-7 border-[3px] border-image rounded-md cursor-pointer md:mt-10 md:py-2"
+        >
+          VIEW FULL PORTFOLIO
+        </button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          class="absolute -z-10 -bottom-16 md:-bottom-32 xl:-bottom-52 xl:rotate-3"
+        >
+          <path
+            fill="#f3f4f5"
+            fill-opacity="1"
+            d="M0,256L48,240C96,224,192,192,288,192C384,192,480,224,576,218.7C672,213,768,171,864,160C960,149,1056,171,1152,160C1248,149,1344,107,1392,85.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
+
+      <!-- Brand Design Team section -->
+      <div
+        class="brand-design-team mt-24 md:mt-32 md:flex md:items-center md:px-5 xl:mt-44 xl:px-24 xl:gap-16"
+      >
+        <div
+          class="image-gallery w-[100vw] h-[47vh] overflow-hidden md:h-[55vh] xl:w-[50%] xl:h-[65vh] 2xl:h-[55vh] 2xl:w-[47%]"
+        >
+          <div class="images -translate-y-20 md:-translate-y-10">
+            <div class="wrapper-1 flex gap-14">
+              <img
+                src="assets/images/image-gallery-1.jpg"
+                alt=""
+                class="h-28 w-28 object-cover rotate-45"
+              />
+              <img
+                src="assets/images/image-gallery-2.jpg"
+                alt=""
+                class="h-28 w-28 object-cover rotate-45"
+              />
+              <img
+                src="assets/images/image-gallery-21.jpg"
+                alt=""
+                class="h-28 w-28 object-cover rotate-45"
+              />
+            </div>
+            <div class="wrapper-2 flex gap-14 -ml-[83px] -mt-7">
+              <img
+                src="assets/images/image-gallery-7.jpg"
+                alt=""
+                class="h-28 w-28 object-cover rotate-45"
+              />
+              <img
+                src="assets/images/image-gallery-5.jpg"
+                alt=""
+                class="h-28 w-28 object-cover rotate-45"
+              />
+              <img
+                src="assets/images/image-gallery-3.jpg"
+                alt=""
+                class="h-28 w-28 object-cover rotate-45"
+              />
+              <img
+                src="assets/images/image-gallery-7.jpg"
+                alt=""
+                class="h-28 w-28 object-cover rotate-45"
+              />
+            </div>
+            <div class="wrapper-3 flex gap-14 -mt-7">
+              <img
+                src="assets/images/image-gallery-8.jpg"
+                alt=""
+                class="h-28 w-28 object-cover rotate-45"
+              />
+              <img
+                src="assets/images/image-gallery-12.jpg"
+                alt=""
+                class="h-28 w-28 object-cover rotate-45"
+              />
+              <img
+                src="assets/images/image-gallery-10.jpg"
+                alt=""
+                class="h-28 w-28 object-cover rotate-45"
+              />
+              <img
+                src="assets/images/image-gallery-11.jpg"
+                alt=""
+                class="h-28 w-28 object-cover rotate-45"
+              />
+            </div>
+            <div class="wrapper-4 flex gap-14 -ml-[83px] -mt-7">
+              <img
+                src="assets/images/image-gallery-12.jpg"
+                alt=""
+                class="h-28 w-28 object-cover rotate-45"
+              />
+              <img
+                src="assets/images/image-gallery-13.jpg"
+                alt=""
+                class="h-28 w-28 object-cover rotate-45"
+              />
+              <img
+                src="assets/images/image-gallery-1.jpg"
+                alt=""
+                class="h-28 w-28 object-cover rotate-45"
+              />
+              <img
+                src="assets/images/image-gallery-15.jpg"
+                alt=""
+                class="h-28 w-28 object-cover rotate-45"
+              />
+            </div>
+            <div class="wrapper-5 flex gap-14 -mt-7">
+              <img
+                src="assets/images/image-gallery-16.jpg"
+                alt=""
+                class="h-28 w-28 object-cover rotate-45"
+              />
+              <img
+                src="assets/images/image-gallery-5.jpg"
+                alt=""
+                class="h-28 w-28 object-cover rotate-45"
+              />
+              <img
+                src="assets/images/image-gallery-18.jpg"
+                alt=""
+                class="h-28 w-28 object-cover rotate-45"
+              />
+              <img
+                src="assets/images/image-gallery-19.jpg"
+                alt=""
+                class="h-28 w-28 object-cover rotate-45"
+              />
+            </div>
+            <div class="wrapper-6 flex gap-14 -ml-[83px] -mt-7">
+              <img
+                src="assets/images/image-gallery-7.jpg"
+                alt=""
+                class="h-28 w-28 object-cover rotate-45"
+              />
+              <img
+                src="assets/images/image-gallery-21.jpg"
+                alt=""
+                class="h-28 w-28 object-cover rotate-45"
+              />
+              <img
+                src="assets/images/image-gallery-19.jpg"
+                alt=""
+                class="h-28 w-28 object-cover rotate-45"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="brand-design-team-info flex flex-col gap-2 mt-10 px-5">
+          <h4 class="text-[14px] tracking-widest text-stone-500">
+            BE MORE CREATIVE
+          </h4>
+          <h2
+            class="text-2xl tracking-widest font-semibold bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent"
+          >
+            CREATIVE BRAND DESIGN TEAM
+          </h2>
+          <p class="mt-2 text-[13px] text-stone-500">
+            We're an established, experienced, and trusted
+            <b>London web design agency</b> with years of experience in
+            providing successful web design solutions.
+          </p>
+          <p class="text-[13px] text-stone-500">
+            An accredited Google Partner working closely with two Google account
+            managers, we deliver effective digital marketing insights.
+          </p>
+          <p class="text-[13px] text-stone-500">
+            Our team is formed from IJI/UX experts,
+            <b>skilled web designers</b>, knowledgeable & creative developers,
+            informed digital marketers and dynamic project managers.
+          </p>
+
+          <!-- Swiper -->
+          <!-- Slider main container -->
+          <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="assets/images/accreditation-1.svg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/accreditation-2.svg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/accreditation-3.svg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/accreditation-4.svg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/accreditation-5.svg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/accreditation-6.svg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="text-stone-400 tracking-wider w-fit px-7 py-1.5 mt-7 border-[3px] border-image rounded-md cursor-pointer md:py-2"
+          >
+            CUSTOM WEBSITE DESIGN
+          </button>
+        </div>
+      </div>
+
+      <!-- our services section -->
+      <div
+        class="our-services mt-24 py-8 relative bg-[#f3f4f5] md:mt-32 md:px-12 xl:mt-44 xl:py-0 xl:px-24"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          class="absolute -z-10 -top-12 left-0 -rotate-3 md:-top-28 xl:-top-40 xl:-rotate-0"
+        >
+          <path
+            fill="#f3f4f5"
+            fill-opacity="1"
+            d="M0,96L60,106.7C120,117,240,139,360,128C480,117,600,75,720,69.3C840,64,960,96,1080,101.3C1200,107,1320,85,1380,74.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+          ></path>
+        </svg>
+        <h4 class="text-center text-[14px] tracking-widest text-stone-500">
+          OVERVIEW
+        </h4>
+        <h2
+          class="text-center mt-1.5 text-2xl tracking-widest font-semibold bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent"
+        >
+          OUR SERVICES
+        </h2>
+        <div
+          class="icons mt-10 mx-8 flex justify-center gap-[5vw] text-2xl text-stone-500 before:content before:h-[1px] before:w-full before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-4)] to-90% before:absolute before:left-0 before:bottom-0 relative"
+        >
+          <i
+            class="fa-solid fa-tablet-screen-button p-3 rounded-t-lg bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-100% text-white"
+            onclick="changeSlide()"
+          ></i>
+          <i
+            class="fa-solid fa-cart-shopping p-2.5 rounded-t-lg"
+            onclick="changeSlide()"
+          ></i>
+          <i
+            class="fa-solid fa-arrow-up-right-dots p-2.5 rounded-t-lg"
+            onclick="changeSlide()"
+          ></i>
+          <i
+            class="fa-solid fa-wifi p-2.5 rounded-t-lg"
+            onclick="changeSlide()"
+          ></i>
+          <i
+            class="fa-regular fa-image p-3 rounded-t-lg"
+            onclick="changeSlide()"
+          ></i>
+        </div>
+
+        <!-- web design -->
+        <div class="web-design px-5">
+          <div class="title">
+            <h4 class="mt-8 text-[14px] tracking-widest text-stone-500">
+              BESPOKE SOLUTION
+            </h4>
+            <h2
+              class="text-2xl tracking-widest font-semibold mt-2 bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent"
+            >
+              WEBSITE DESIGN
+            </h2>
+          </div>
+          <div
+            class="web-design-info flex flex-col gap-3 px-5 xl:flex-row xl:gap-10"
+          >
+            <video
+              src="assets/videos/web-design.mp4"
+              autoplay
+              loop
+              muted
+              class="lg:w-[50%]"
+            ></video>
+            <div class="content flex flex-col gap-4">
+              <p class="mt-2 text-[13px] text-stone-500">
+                As an <b>award-winning London web design agency</b>, we have a
+                phased approach to our web design projects which ensures all
+                aspects of creating a high-performance website are effectively
+                considered. We have a highly skilled in-house team with a
+                diverse skill set ensuring we're able to provide a specialist
+                for each stage of your web project. Our web design USP's
+                include:
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Bespoke design and development — Our industry leading websites
+                are designed and developed from scratch in house by our
+                <b>London based web design team</b> - we do not use themes or
+                site builders.
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Without compromise — by custom building all our websites we are
+                able to fulfil all design and functionality requirements without
+                having to comprise on quality.
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Interactive websites — we create websites that animate, respond,
+                and interact producing an engaging user experience through site
+                animation techniques including Canvas elements, Lottiejs and
+                WebGL technologies.
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                SEO - We plan, design and develop our websites with careful SEO
+                consideration ensuring they are ready to competitively rank and
+                perform once launched.
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Optimized user experience — During our discovery and wireframing
+                phases we consider your websites user journey, demographics and
+                IJI in order to create a website with a well-thought-out user
+                flow - delivering an overall better site engagement and
+                conversion rate.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- e-commerce -->
+        <div class="e-commerce px-5 hidden">
+          <div class="title">
+            <h4 class="mt-8 text-[14px] tracking-widest text-stone-500">
+              SCALABLE SOLUTIONS
+            </h4>
+            <h2
+              class="text-2xl tracking-widest font-semibold mt-2 bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent"
+            >
+              E-COMMERCE
+            </h2>
+          </div>
+          <div
+            class="e-commerce-info flex flex-col gap-3 px-5 xl:flex-row xl:gap-10"
+          >
+            <video
+              src="assets/videos/e-commerce.mp4"
+              autoplay
+              loop
+              muted
+              class="lg:w-[50%]"
+            ></video>
+            <div class="content flex flex-col gap-4">
+              <p class="mt-2 text-[13px] text-stone-500">
+                We offer industry-leading, enterprise standard e-commerce
+                systems as part of our website services. Our e-commerce websites
+                are fully bespoke, adapted to work seamlessly with your business
+                model — whether it be drop shipping, virtual products, or
+                international sales: our expert London based web design team
+                have you covered. We specialise in scalable e-commerce sites
+                that are easy for our clients to update, with user- friendly
+                product management, integration with a range of payment systems,
+                and a fully secure customer shopping experience.
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Industry leading, scalable e-commerce systems including
+                Woocommerce & Magento.
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Integrated, SSL Secure payment - accept a range of payments
+                online, including subscriptions, credit / debit cards, and Apple
+                / Android pay.
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Complete control over your site, with easy in-house management
+                of your online store.
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Integration of advanced reporting tools such as Google Analytics
+                to track user behaviour and optimise for revenue/conversions.
+              </p>
+              <button
+                class="text-stone-400 tracking-wider w-fit px-8 py-1.5 mt-2.5 border-[3px] border-image rounded-md cursor-pointer"
+              >
+                E-COMMERCE SOLUTIONS
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SEO -->
+        <div class="SEO px-5 hidden">
+          <div class="title">
+            <h4 class="mt-8 text-[14px] tracking-widest text-stone-500">
+              RESULT DRIVEN
+            </h4>
+            <h2
+              class="text-2xl tracking-widest font-semibold bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent"
+            >
+              SEO
+            </h2>
+          </div>
+          <div class="SEO-info flex flex-col gap-3 px-5 xl:flex-row xl:gap-10">
+            <video
+              src="assets/videos/SEO.mp4"
+              autoplay
+              loop
+              muted
+              class="lg:w-[50%]"
+            ></video>
+            <div class="content flex flex-col gap-4">
+              <p class="mt-2 text-[13px] text-stone-500">
+                Unlike many specialist marketing & SEO companies, as a
+                full-service London agency we have the advantage of being able
+                to carry out a successful digital marketing campaign, completely
+                in-house. This allows us to make both small & complex changes to
+                a website as part of an SEO strategy, avoiding any unnecessary
+                to-ing & fro-ing & ensuring that work is carried out as
+                efficiently as possible.
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Certified Google Partners, passionate about achieving real
+                results for your business.
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Tailored digital marketing solutions, unique to your
+                requirements.
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Full onsite optimisation for search engine indexing & ranking.
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Appear in Google page results for the searches that are
+                important to you.
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Transparent monthly reporting on progress, rankings, conversions
+                & tangible ROI.
+              </p>
+              <button
+                class="text-stone-400 tracking-wider w-fit px-8 py-1.5 mt-2.5 border-[3px] border-image rounded-md cursor-pointer"
+              >
+                SEO SOLUTIONS
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- hosting -->
+        <div class="hosting px-5 hidden">
+          <div class="title">
+            <h4 class="mt-8 text-[14px] tracking-widest text-stone-500">
+              MANAGED SOLUTIONS
+            </h4>
+            <h2
+              class="text-2xl tracking-widest font-semibold bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent"
+            >
+              HOSTING SOLUTIONS
+            </h2>
+          </div>
+          <div
+            class="hosting-info flex flex-col gap-3 px-5 xl:flex-row xl:gap-10"
+          >
+            <video
+              src="assets/videos/hosting.mp4"
+              autoplay
+              loop
+              muted
+              class="lg:w-[50%]"
+            ></video>
+            <div class="content flex flex-col gap-4">
+              <p class="mt-2 text-[13px] text-stone-500">
+                Our servers load websites up to 5x faster (TTFB) than shared
+                hosting services and make use of cloud flare DNS which ensures
+                that your site doesn't go down, is kept secure, and consistently
+                runs quickly via caching.
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Amazon S3 Backups.
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Free Setup - We move your site over and perform all technical
+                set up.
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Daily Antivirus Scans of the server
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Managed Firewall to prevent hackers and spam
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                24 × 7 External Monitoring
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                24 × 7 UK support
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                SLA - Service Level Agreement for your peace of mind.
+              </p>
+              <button
+                class="text-stone-400 tracking-wider w-fit px-8 py-1.5 mt-2.5 border-[3px] border-image rounded-md cursor-pointer"
+              >
+                HOSTING SOLUTIONS
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- graphic design -->
+        <div class="graphic-design px-5 hidden">
+          <div class="title">
+            <h4 class="mt-8 text-[14px] tracking-widest text-stone-500">
+              Bespoke & Unique
+            </h4>
+            <h2
+              class="text-2xl tracking-widest font-semibold bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent"
+            >
+              Graphic Design
+            </h2>
+          </div>
+          <div
+            class="graphic-design-info flex flex-col gap-3 px-5 xl:flex-row xl:gap-10"
+          >
+            <video
+              src="assets/videos/graphic-design.mp4"
+              autoplay
+              loop
+              muted
+              class="lg:w-[50%]"
+            ></video>
+            <div class="content flex flex-col gap-4">
+              <p class="mt-2 text-[13px] text-stone-500">
+                We have a dedicated London based design team who are experts in
+                creating impactful UI/UX optimised design, stunning logos and
+                considered branding. As a full service London agency we’re able
+                to provide a complete design, online and digital marketing
+                solution.
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Brand Design
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Graphic Design
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Logo Design
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Print Design work
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Business Stationery
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Brand Guidelines
+              </p>
+              <p
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+              >
+                Internal & External communications (emails, brochures,
+                presentations (PowerPoint), infographics, advertising creative,
+                related marketing collateral)
+              </p>
+              <button
+                class="text-stone-400 tracking-wider w-fit px-8 py-1.5 mt-2.5 border-[3px] border-image rounded-md cursor-pointer"
+              >
+                GRAPHIC DESIGN
+              </button>
+            </div>
+          </div>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          class="absolute -z-10 -bottom-16 left-0 md:-bottom-32 xl:-bottom-60 xl:rotate-2"
+        >
+          <path
+            fill="#f3f4f5"
+            fill-opacity="1"
+            d="M0,256L48,240C96,224,192,192,288,192C384,192,480,224,576,218.7C672,213,768,171,864,160C960,149,1056,171,1152,160C1248,149,1344,107,1392,85.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
+
+      <!-- Our Bespoke Websites Section -->
+      <div
+        class="our-bespoke-websites mt-24 flex flex-col items-center gap-2 md:mt-32 md:px-12 xl:mt-44 xl:px-24"
+      >
+        <h4 class="text-[14px] tracking-widest text-stone-500">
+          OUR BESPOKE WEBSITE
+        </h4>
+        <h2
+          class="text-center text-2xl tracking-widest font-semibold bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent"
+        >
+          INCLUDE THE FOLLOWING
+        </h2>
+        <div
+          class="our-bespoke-websites-info mt-7 px-5 flex flex-col items-center gap-2 object-cover md:w-[50%]"
+        >
+          <img
+            src="assets/images/our-bespoke-websites-1.png"
+            alt=""
+            class="h-40 object-cover"
+          />
+          <h5 class="mt-1 text-[14px] tracking-widest text-stone-500">
+            BESPOKE DESIGN
+          </h5>
+          <p class="text-[13px] text-stone-500 text-center">
+            All of our websites are carefully designed in Adobe Creative Suite
+            before being coded by our experienced London based web developers,
+            ensuring your site is a unique and bespoke design. We have a
+            collaborative design process, which considers our client's feedback
+            at every stage, ensuring 100% design satisfaction.
+          </p>
+        </div>
+      </div>
+
+      <!-- our process section -->
+      <div
+        class="our-process mt-20 px-5 py-8 flex flex-col gap-4 relative bg-[#f3f4f5] md:mt-32 md:px-12 xl:mt-44 xl:px-24 xl:py-0"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          class="absolute -z-10 -top-12 left-0 -rotate-3 md:-top-32 xl:-top-48 xl:-rotate-0"
+        >
+          <path
+            fill="#f3f4f5"
+            fill-opacity="1"
+            d="M0,96L60,106.7C120,117,240,139,360,128C480,117,600,75,720,69.3C840,64,960,96,1080,101.3C1200,107,1320,85,1380,74.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+          ></path>
+        </svg>
+        <h2
+          class="text-2xl tracking-widest font-semibold bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent"
+        >
+          OUR WEBSITE DESIGN PROCESS
+        </h2>
+        <p class="text-[13px] text-stone-500 lg:w-[65%] xl:w-[50%]">
+          Our expert London based web design team follow a bespoke process from
+          stan to finish, providing you with unique website designs tailored to
+          your specific requirements-
+        </p>
+        <button
+          class="text-stone-400 tracking-wider w-fit px-8 py-1.5 mt-2.5 border-[3px] border-image rounded-md cursor-pointer md:py-2.5 md:px-14"
+        >
+          LEARN MORE
+        </button>
+        <div
+          class="process mt-7 px-8 flex flex-col gap-10 md:flex-row md:flex-wrap md:gap-14"
+        >
+          <div
+            class="step-1 flex flex-col gap-2 items-start md:w-[45%] xl:w-[30%]"
+          >
+            <img
+              src="assets/images/discovery.png"
+              alt=""
+              class="h-20 object-cover"
+            />
+            <h5 class="text-stone-600 tracking-widest">1 DISCOVERY</h5>
+            <p class="text-[14px] text-stone-500">
+              Our team will perform research and discovery to plan and inform
+              the phases of the project.
+            </p>
+          </div>
+          <div
+            class="step-2 flex flex-col gap-2 items-start md:w-[45%] xl:w-[30%]"
+          >
+            <img
+              src="assets/images/wireframes.png"
+              alt=""
+              class="h-20 object-cover"
+            />
+            <h5 class="text-stone-600 tracking-widest">2 WIREFRAMING</h5>
+            <p class="text-[14px] text-stone-500">
+              Prior to prototyping the designs, we will create wireframes which
+              plan out the structure and user flow of your website.
+            </p>
+          </div>
+          <div
+            class="step-3 flex flex-col gap-2 items-start md:w-[45%] xl:w-[30%]"
+          >
+            <img
+              src="assets/images/design.png"
+              alt=""
+              class="h-20 object-cover"
+            />
+            <h5 class="text-stone-600 tracking-widest">3 DESIGN</h5>
+            <p class="text-[14px] text-stone-500">
+              In a collaborative process from end-to-end, the design of the
+              website is created from scratch in Photoshop.
+            </p>
+          </div>
+          <div
+            class="step-4 flex flex-col gap-2 items-start md:w-[45%] xl:w-[30%]"
+          >
+            <img
+              src="assets/images/development.png"
+              alt=""
+              class="h-20 object-cover"
+            />
+            <h5 class="text-stone-600 tracking-widest">4 DEVELOPMENT</h5>
+            <p class="text-[14px] text-stone-500">
+              The final designs from the design phase are used to develop a web
+              version of the site on our staging server.
+            </p>
+          </div>
+          <div
+            class="step-5 flex flex-col gap-2 items-start md:w-[45%] xl:w-[30%]"
+          >
+            <img
+              src="assets/images/content.png"
+              alt=""
+              class="h-20 object-cover"
+            />
+            <h5 class="text-stone-600 tracking-widest">5 CONTENT</h5>
+            <p class="text-[14px] text-stone-500">
+              The website functionality is developed and content is populated as
+              outlined within the project spec.
+            </p>
+          </div>
+          <div
+            class="step-6 flex flex-col gap-2 items-start md:w-[45%] xl:w-[30%]"
+          >
+            <img
+              src="assets/images/testing.png"
+              alt=""
+              class="h-20 object-cover"
+            />
+            <h5 class="text-stone-600 tracking-widest">6 TESTING</h5>
+            <p class="text-[14px] text-stone-500">
+              The website undergoes a full Q&A and interoperability testing
+              procedure, ensuring optimal performance.
+            </p>
+          </div>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          class="absolute -z-10 -bottom-16 left-0 md:-bottom-36 xl:-bottom-56 xl:rotate-3"
+        >
+          <path
+            fill="#f3f4f5"
+            fill-opacity="1"
+            d="M0,256L48,240C96,224,192,192,288,192C384,192,480,224,576,218.7C672,213,768,171,864,160C960,149,1056,171,1152,160C1248,149,1344,107,1392,85.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
+
+      <!-- our news section -->
+      <div
+        class="our-news mt-24 flex flex-col items-center px-8 md:mt-32 md:px-12 xl:mt-44 xl:px-24"
+      >
+        <h4 class="text-[14px] tracking-widest text-stone-500">
+          READ OUR NEWS
+        </h4>
+        <h2
+          class="text-2xl tracking-widest font-semibold bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent"
+        >
+          LATEST INSIGHTS
+        </h2>
+        <div class="our-news-info lg:flex lg:justify-between">
+          <div
+            class="news-1 mt-12 relative bg-stone-100 rounded-2xl lg:w-[32%]"
+          >
+            <img
+              src="assets/images/news-1.webp"
+              alt=""
+              class="h-52 w-full object-cover rounded-t-2xl brightness-50"
+            />
+            <h6
+              class="text-[12px] text-white hover:text-[var(--gradient-color-3)] absolute top-[32%] left-5 md:text-sm lg:top-[21%]"
+            >
+              Agency News
+            </h6>
+            <h5
+              class="text-sm tracking-wider text-white absolute top-[40%] left-5 md:text-lg lg:top-[27%] xl:w-[80%]"
+            >
+              CREATIVE BRAND DESIGN RECOGNIZED AS A CLUTCH GLOBAL LEADER &
+              CLUTCH CHAMPION
+            </h5>
+            <div class="content p-5 md:px-7">
+              <p class="text-[14px] text-stone-500">
+                We're proud to announce that we've been recognized as one ot the
+                best website design agencies by Clutch.
+              </p>
+              <button
+                class="flex justify-between items-center w-full mt-4 text-[var(--gradient-color-3)] cursor-pointer"
+              >
+                <h6 class="text-[12px] text-[var(--gradient-color-3)]">
+                  by CBD Team
+                </h6>
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="news-2 mt-12 relative bg-stone-100 rounded-2xl lg:w-[32%]"
+          >
+            <img
+              src="assets/images/news-2.webp"
+              alt=""
+              class="h-52 w-full object-cover rounded-t-2xl brightness-90"
+            />
+            <h6
+              class="text-[12px] text-white hover:text-[var(--gradient-color-3)] absolute top-[31%] left-5 md:text-sm lg:top-[27%]"
+            >
+              Website Design
+            </h6>
+            <h5
+              class="text-sm tracking-wider text-white absolute top-[37%] left-5 md:text-lg lg:top-[32%] xl:w-[80%] 2xl:top-[34%]"
+            >
+              WEBSITE ACCESSIBILITY AND WHY IT MATTERS
+            </h5>
+            <div class="content p-5 md:px-7">
+              <p class="text-[14px] text-stone-500">
+                Delve into the essentials of website accessibility with this
+                comprehensive guide. Discover how adhering to Web Content
+                Accessibility Guidelines (WCAG) not only caters to a diverse
+                user base but also complies with legal standards, enhancing the
+                overall user experience.
+              </p>
+              <button
+                class="flex justify-between items-center w-full mt-4 text-[var(--gradient-color-3)] cursor-pointer"
+              >
+                <h6 class="text-[12px] text-[var(--gradient-color-3)]">
+                  by Georgia Brown
+                </h6>
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="news-3 mt-12 relative bg-stone-100 rounded-2xl lg:w-[32%]"
+          >
+            <img
+              src="assets/images/news-3.jpg"
+              alt=""
+              class="h-52 w-full object-cover rounded-t-2xl brightness-50"
+            />
+            <h6
+              class="text-[12px] text-white hover:text-[var(--gradient-color-3)] absolute top-[40%] left-5 md:text-sm lg:top-[27%]"
+            >
+              Agency News
+            </h6>
+            <h5
+              class="text-sm tracking-wider text-white absolute top-[47%] left-5 md:text-lg lg:top-[32%] lg:w-[80%] 2xl:top-[34%]"
+            >
+              WEBSITE LAUNCH - GIBRALTAR NATURE RESERVE
+            </h5>
+            <div class="content p-5 md:px-7">
+              <p class="text-[14px] text-stone-500">
+                We're very proud to announce the Official web platform tor the
+                Upper Rock Nature Reserve - Gibraltar's primary destination.
+              </p>
+              <button
+                class="flex justify-between items-center w-full mt-4 text-[var(--gradient-color-3)] cursor-pointer"
+              >
+                <h6 class="text-[12px] text-[var(--gradient-color-3)]">
+                  by Tyler Hounsome
+                </h6>
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- cost calculator section -->
+      <div
+        class="cost-calculator mt-24 px-9 py-28 flex flex-col gap-4 items-center bg-gradient-to-br from-[#f6aaa5] from-10% via-[#ea5f90] via-35% to-[#d764c5] to-90% relative md:py-36 md:px-12 lg:py-40 lg:px-32 xl:py-56"
+        style="
+          box-shadow: inset -50px 0 100px -45px rgba(255, 255, 255, 0.721),
+            inset 50px 0 100px -45px rgba(255, 255, 255, 0.721);
+        "
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          class="absolute -top-2 right-0 md:-top-1"
+        >
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,128L40,138.7C80,149,160,171,240,170.7C320,171,400,149,480,117.3C560,85,640,43,720,48C800,53,880,107,960,112C1040,117,1120,75,1200,53.3C1280,32,1360,32,1400,32L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+          ></path>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          class="absolute top-1 right-0 -rotate-2 md:top-3.5"
+        >
+          <path
+            fill="#ffffff"
+            fill-opacity="0.4"
+            d="M0,128L40,138.7C80,149,160,171,240,170.7C320,171,400,149,480,117.3C560,85,640,43,720,48C800,53,880,107,960,112C1040,117,1120,75,1200,53.3C1280,32,1360,32,1400,32L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+          ></path>
+        </svg>
+        <h2
+          class="text-2xl font-semibold text-white tracking-wider text-center"
+        >
+          WEBSITE DESIGN COST CALCULATOR
+        </h2>
+        <p class="text-[14px] text-white text-center xl:w-[65%]">
+          Use our interactive web design cost calculator tool to plan your
+          website design project, and receive a free estimate / proposal from
+          our London based team for your web design project.
+        </p>
+        <button
+          class="border-b-2 mt-1.5 px-8 py-2.5 text-white hover:border-2 cursor-pointer tracking-wider"
+        >
+          PLAN MY PROJECT
+        </button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          class="absolute -bottom-4 right-0 md:-bottom-9 lg:bottom-[-73px] xl:-bottom-32 xl:rotate-1"
+        >
+          <path
+            fill="#ffffff"
+            fill-opacity="0.4"
+            d="M0,128L40,138.7C80,149,160,171,240,170.7C320,171,400,149,480,117.3C560,85,640,43,720,48C800,53,880,107,960,112C1040,117,1120,75,1200,53.3C1280,32,1360,32,1400,32L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+          ></path>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          class="absolute -bottom-8 right-0 -rotate-2 md:-bottom-14 lg:-bottom-24 xl:bottom-[-160px] xl:rotate-3"
+        >
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,128L40,138.7C80,149,160,171,240,170.7C320,171,400,149,480,117.3C560,85,640,43,720,48C800,53,880,107,960,112C1040,117,1120,75,1200,53.3C1280,32,1360,32,1400,32L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+
+      <!-- contact us section -->
+      <div
+        class="contact-us mt-20 px-7 flex flex-col gap-3.5 md:px-12 lg:mt-32 xl:mt-36 xl:px-24"
+      >
+        <h4 class="text-lg font-semibold tracking-wider text-stone-500">
+          INTERESTED IN DISCUSSING A PROJECT WITH US?
+        </h4>
+        <p class="text-[14px] text-stone-500">
+          Do you have a project in mind, that you feel our approach would work
+          well for?
+        </p>
+        <p class="text-[14px] text-stone-500 mb-7">
+          We're always happy to discuss your project with you and put together a
+          free proposal, just fill out the form below or give us a call to get
+          started:
+        </p>
+        <div class="wrapper lg:flex lg:justify-between">
+          <input
+            type="text"
+            name=""
+            id=""
+            required
+            placeholder="What's your name? *"
+            class="border-b border-image outline-none p-2.5 lg:w-[47%]"
+          />
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Your company (if applicable)"
+            class="border-b border-image outline-none p-2.5 lg:w-[47%]"
+          />
+        </div>
+        <div class="wrapper lg:flex lg:justify-between">
+          <input
+            type="text"
+            name=""
+            id=""
+            required
+            placeholder="Enter your email *"
+            class="border-b border-image outline-none p-2.5 lg:w-[47%]"
+          />
+          <input
+            type="number"
+            name=""
+            id=""
+            required
+            placeholder="Enter your phone number *"
+            class="border-b border-image outline-none p-2.5 lg:w-[47%]"
+          />
+        </div>
+        <textarea
+          name=""
+          id=""
+          placeholder="Enter your message here..."
+          rows="4"
+          class="border-b border-image outline-none p-2.5"
+        ></textarea>
+        <label for="file" class="text-[14px] text-stone-500 mt-2"
+          >Send us your brief (if applicable)</label
+        >
+        <input
+          type="file"
+          name="file"
+          id=""
+          class="text-[14px] text-stone-500 px-2"
+        />
+        <p class="text-[14px] text-stone-500">
+          Accepted file types : jpg, png, pdf, doc, ppt, docx-
+        </p>
+        <p class="text-[12px] text-stone-500 mt-2.5 lg:w-[70%] xl:w-[60%]">
+          This form collects your contact information so that we can correspond
+          with you. Check out our
+          <button
+            class="text-[var(--gradient-color-3)] font-semibold leading-7 cursor-pointer lg:py-2"
+          >
+            privacy policy
+          </button>
+          for more information about how we protect and manage your data.
+        </p>
+        <button
+          class="text-stone-400 tracking-wider w-fit px-8 py-1.5 mt-4 border-[3px] border-image rounded-md"
+        >
+          SEND YOUR ENQUIRY
+        </button>
+        <h5 class="text-stone-500 text-sm font-semibold">
+          Tel : (+44)
+          <a
+            href="#"
+            class="font-normal bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent"
+            >0207 870 5763</a
+          >
+        </h5>
+        <h5 class="text-stone-500 text-sm font-semibold">
+          Tel : +1
+          <a
+            href="#"
+            class="font-normal bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent"
+            >(217) 372 7740</a
+          >
+        </h5>
+        <h5 class="text-stone-500 text-sm font-semibold">
+          Email :
+          <a
+            href="#"
+            class="font-normal bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent"
+            >Info@creativbranddesign.uk</a
+          >
+        </h5>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="mt-20 bg-[#131313] text-white flex flex-wrap gap-12">
+      <!-- footer-top -->
+      <div
+        class="footer-top px-7 py-12 flex flex-wrap gap-16 md:flex-nowrap md:px-12 xl:px-24 xl:justify-between xl:w-full xl:gap-32"
+      >
+        <!-- accreditation section -->
+        <div class="accreditation xl:w-[80%]">
+          <h4
+            class="mb-10 before:content before:h-[1px] before:w-full before:bg-stone-600 before:absolute before:-bottom-2 relative"
+          >
+            ACCREDITATION
+          </h4>
+          <div class="images flex flex-wrap gap-10">
+            <img src="assets/images/accreditation-1.svg" alt="" class="w-24" />
+            <img src="assets/images/accreditation-2.svg" alt="" class="w-24" />
+            <img src="assets/images/accreditation-3.svg" alt="" class="w-24" />
+            <img src="assets/images/accreditation-4.svg" alt="" class="w-24" />
+            <img src="assets/images/accreditation-5.svg" alt="" class="w-24" />
+            <img src="assets/images/accreditation-6.svg" alt="" class="w-24" />
+          </div>
+        </div>
+
+        <!-- quick links -->
+        <div class="quick-links w-full xl:w-[80%]">
+          <h4
+            class="mb-10 before:content before:h-[1px] before:w-full before:bg-stone-600 before:absolute before:-bottom-2 relative"
+          >
+            QUICK LINKS
+          </h4>
+          <ul class="text-[13px] text-stone-200 flex justify-evenly gap-14">
+            <ul class="flex flex-col gap-5">
+              <li>Project Planner</li>
+              <li>About CBD</li>
+              <li>SEO Checker</li>
+              <li>Graphic Design</li>
+            </ul>
+            <ul class="flex flex-col gap-5">
+              <li>Website Design</li>
+              <li>SEO Services</li>
+              <li>Hosting</li>
+              <li>E-Commerce</li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+
+      <!-- footer bottom -->
+      <div
+        class="footer-bottom px-7 py-8 flex items-center flex-wrap gap-5 justify-center bg-black w-full xl:justify-between xl:px-24"
+      >
+        <h5 class="text-stone-400 text-[12px] text-center leading-6">
+          &copy; 2024 Creative Brand Design Ltd. I Registered in England
+          No.08757535
+        </h5>
+        <h5
+          class="text-stone-400 text-[12px] text-center tracking-wider flex flex-wrap gap-4 justify-center"
+        >
+          Terms & Conditions | Privacy Policy | Cookie Policy
+          <div class="socials text-lg text-stone-500 flex gap-5">
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </h5>
+      </div>
+    </footer>
+
+    <!-- script -->
+
+    <!-- particles.js -->
+    <script src="JavaScript/app.js"></script>
+    <script src="JavaScript/particles.js"></script>
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="JavaScript/swiper.js"></script>
+
+    <!-- our services -->
+    <script src="JavaScript/our-services.js"></script>
+  </body>
+</html>
