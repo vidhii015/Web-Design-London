@@ -1,3 +1,18 @@
+// header js
+
+const sidebar = document.getElementById("sidebar");
+const nav = document.getElementsByTagName("nav")[0];
+
+sidebar.addEventListener("click", () => {
+  // Change sidebar icon color
+  sidebar.classList.toggle("text-transparent");
+
+  // Toggling right position, opacity, and visibility for smooth transition
+  nav.classList.toggle("opacity-0");
+});
+
+// our services js
+
 const i = document.querySelectorAll(".our-services .icons i");
 
 function changeSlide() {

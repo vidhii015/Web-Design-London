@@ -111,7 +111,60 @@
         <img src="assets/images/logo.jpeg" alt="" class="h-7" />
         <h5 class="text-xs tracking-[4px] px-1.5">CREATIVE</h5>
       </div>
-      <i class="fa-solid fa-bars-staggered"></i>
+      <i
+        class="fa-solid fa-bars-staggered bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text cursor-pointer"
+        id="sidebar"
+      ></i>
+      <nav
+        class="flex flex-col gap-4 text-[16px] absolute -z-10 right-0 top-0 bg-[#ffffff] px-5 py-12 pt-20 opacity-0 transition-all duration-500 md:px-7 md:py-14 lg:gap-3 2xl:text-lg 2xl:gap-6"
+      >
+        <a
+          href="#about-us"
+          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70"
+          >ABOUT US</a
+        >
+        <a
+          href="#projects-section"
+          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70"
+          >PROJECTS</a
+        >
+        <a
+          href="#brand-design-team"
+          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70"
+          >OUR TEAM</a
+        >
+        <a
+          href="#our-services"
+          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70"
+          >OUR SERVICES</a
+        >
+        <a
+          href="#our-bespoke-websites"
+          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70"
+        >
+          OUR BESPOKE WEBSITE</a
+        >
+        <a
+          href="#our-process"
+          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70"
+          >OUR PROCESS</a
+        >
+        <a
+          href="#our-news"
+          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70"
+          >OUR NEWS</a
+        >
+        <a
+          href="#cost-calculator"
+          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70"
+          >COST CALCULATOR</a
+        >
+        <a
+          href="#contact-us"
+          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70"
+          >CONTACT US</a
+        >
+      </nav>
     </header>
 
     <!-- main -->
@@ -125,7 +178,7 @@
           <h1 class="text-4xl font-medium sm:tracking-wider md:text-[40px]">
             AWARD WINNING WEB DESIGN AGENCY
           </h1>
-          <h3 class="text-[17px] md:text-xl">
+          <h3 class="text-[17px] md:text-xl 2xl:w-[90%]">
             We are an award-winning <b>London based web design agency</b>,
             focused on creating bespoke & interactive web experiences for
             aspiring & established businesses and enterprises.
@@ -160,7 +213,7 @@
           class="absolute bottom-3 md:bottom-7 lg:bottom-5 xl:-bottom-7"
         >
           <path
-            fill="#f3f4f5"
+            fill="#ffffff"
             fill-opacity="0.3"
             d="M0,32L60,64C120,96,240,160,360,192C480,224,600,224,720,213.3C840,203,960,181,1080,176C1200,171,1320,181,1380,186.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
           ></path>
@@ -171,7 +224,7 @@
           class="absolute bottom-0 md:bottom-5 lg:bottom-6 xl:-bottom-4"
         >
           <path
-            fill="#f3f4f5"
+            fill="#ffffff"
             fill-opacity="0.4"
             d="M0,96L60,122.7C120,149,240,203,360,213.3C480,224,600,192,720,197.3C840,203,960,245,1080,224C1200,203,1320,117,1380,74.7L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
           ></path>
@@ -181,6 +234,7 @@
       <!-- about us section -->
       <div
         class="about-us-section flex flex-wrap-reverse gap-12 mt-14 px-5 md:px-14 xl:mt-28 xl:px-24 lg:items-center"
+        id="about-us"
       >
         <div class="about-us-info flex flex-col gap-2 lg:w-[43%]">
           <h4 class="text-stone-700 font-light tracking-wider md:text-[16px]">
@@ -245,6 +299,7 @@
       <!-- projects-section -->
       <div
         class="projects-section mt-20 py-8 flex flex-col items-center relative bg-[#f3f4f5] md:mt-32 xl:py-0 xl:mt-48"
+        id="projects-section"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -336,6 +391,7 @@
       <!-- Brand Design Team section -->
       <div
         class="brand-design-team mt-24 md:mt-32 md:flex md:items-center md:px-5 xl:mt-44 xl:px-24 xl:gap-16"
+        id="brand-design-team"
       >
         <div
           class="image-gallery w-[100vw] h-[47vh] overflow-hidden md:h-[55vh] xl:w-[50%] xl:h-[65vh] 2xl:h-[55vh] 2xl:w-[47%]"
@@ -527,6 +583,7 @@
       <!-- our services section -->
       <div
         class="our-services mt-24 py-8 relative bg-[#f3f4f5] md:mt-32 md:px-12 xl:mt-44 xl:py-0 xl:px-24"
+        id="our-services"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -948,6 +1005,7 @@
       <!-- Our Bespoke Websites Section -->
       <div
         class="our-bespoke-websites mt-24 flex flex-col items-center gap-2 md:mt-32 md:px-12 xl:mt-44 xl:px-24"
+        id="our-bespoke-websites"
       >
         <h4 class="text-[14px] tracking-widest text-stone-500">
           OUR BESPOKE WEBSITE
@@ -981,6 +1039,7 @@
       <!-- our process section -->
       <div
         class="our-process mt-20 px-5 py-8 flex flex-col gap-4 relative bg-[#f3f4f5] md:mt-32 md:px-12 xl:mt-44 xl:px-24 xl:py-0"
+        id="our-process"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -1112,6 +1171,7 @@
       <!-- our news section -->
       <div
         class="our-news mt-24 flex flex-col items-center px-8 md:mt-32 md:px-12 xl:mt-44 xl:px-24"
+        id="our-news"
       >
         <h4 class="text-[14px] tracking-widest text-stone-500">
           READ OUR NEWS
@@ -1231,6 +1291,7 @@
       <!-- cost calculator section -->
       <div
         class="cost-calculator mt-24 px-9 py-28 flex flex-col gap-4 items-center bg-gradient-to-br from-[#f6aaa5] from-10% via-[#ea5f90] via-35% to-[#d764c5] to-90% relative md:py-36 md:px-12 lg:py-40 lg:px-32 xl:py-56"
+        id="cost-calculator"
         style="
           box-shadow: inset -50px 0 100px -45px rgba(255, 255, 255, 0.721),
             inset 50px 0 100px -45px rgba(255, 255, 255, 0.721);
@@ -1300,6 +1361,7 @@
       <!-- contact us section -->
       <div
         class="contact-us mt-20 px-7 flex flex-col gap-3.5 md:px-12 lg:mt-32 xl:mt-36 xl:px-24"
+        id="contact-us"
       >
         <h4 class="text-lg font-semibold tracking-wider text-stone-500">
           INTERESTED IN DISCUSSING A PROJECT WITH US?
