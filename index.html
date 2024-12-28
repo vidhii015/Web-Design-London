@@ -55,12 +55,26 @@
       .border-image {
         border-image: linear-gradient(
             to bottom right,
-            var(--gradient-color-1) 0%,
-            var(--gradient-color-2) 35%,
-            var(--gradient-color-3) 70%,
+            var(--gradient-color-1) 20%,
+            var(--gradient-color-2) 50%,
             var(--gradient-color-4) 100%
           )
           1;
+      }
+
+      .slide.active {
+        display: block;
+      }
+      .slider .slide-index .circle.active-circle {
+        background-color: transparent;
+        background-image: linear-gradient(
+          to bottom right,
+          var(--gradient-color-1) 0%,
+          var(--gradient-color-2) 35%,
+          var(--gradient-color-3) 70%,
+          var(--gradient-color-4) 100%
+        );
+        transform: scale(1.2);
       }
 
       /* swiper css */
@@ -97,7 +111,13 @@
 
         .swiper {
           width: 40%;
-          margin: 30px 0;
+          margin: 20px 0 0;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .swiper {
+          width: 45%;
         }
       }
     </style>
@@ -245,17 +265,23 @@
           >
             CREATIVE BRAND DESIGN
           </h2>
-          <p class="mt-2 text-[13px] text-stone-500 md:text-sm">
+          <p
+            class="mt-2 text-[13px] text-stone-500 md:text-sm xl:text-[16px] xl:mt-2.5"
+          >
             We are an award-winning <b>London based web design agency</b>,
             focused on creating bespoke & interactive web experiences for
             aspiring & established businesses and enterprises.
           </p>
-          <p class="text-[13px] text-stone-500 md:text-sm">
+          <p
+            class="text-[13px] text-stone-500 md:text-sm xl:text-[16px] xl:mt-2.5"
+          >
             Our collaborative, phased approach considers all aspects of web
             design & branding, SEO optimization, interactivity, and IJI/UX to
             deliver industry leading solutions.
           </p>
-          <p class="text-[13px] text-stone-500 md:text-sm">
+          <p
+            class="text-[13px] text-stone-500 md:text-sm xl:text-[16px] xl:mt-2.5"
+          >
             We specialise on high performance immersive digital experiences
             aimed at delivering our clients a competitive advantage and
             effective ROI on their investment.
@@ -390,7 +416,7 @@
 
       <!-- Brand Design Team section -->
       <div
-        class="brand-design-team mt-24 md:mt-32 md:flex md:items-center md:px-5 xl:mt-44 xl:px-24 xl:gap-16"
+        class="brand-design-team mt-24 md:mt-32 md:flex md:items-center md:px-5 md:gap-5 xl:mt-44 xl:px-24 xl:gap-16"
         id="brand-design-team"
       >
         <div
@@ -530,16 +556,16 @@
           >
             CREATIVE BRAND DESIGN TEAM
           </h2>
-          <p class="mt-2 text-[13px] text-stone-500">
+          <p class="mt-2 text-[13px] text-stone-500 xl:text-[16px] xl:mt-2.5">
             We're an established, experienced, and trusted
             <b>London web design agency</b> with years of experience in
             providing successful web design solutions.
           </p>
-          <p class="text-[13px] text-stone-500">
+          <p class="text-[13px] text-stone-500 xl:text-[16px] xl:mt-2.5">
             An accredited Google Partner working closely with two Google account
             managers, we deliver effective digital marketing insights.
           </p>
-          <p class="text-[13px] text-stone-500">
+          <p class="text-[13px] text-stone-500 xl:text-[16px] xl:mt-2.5">
             Our team is formed from IJI/UX experts,
             <b>skilled web designers</b>, knowledgeable & creative developers,
             informed digital marketers and dynamic project managers.
@@ -605,28 +631,49 @@
           OUR SERVICES
         </h2>
         <div
-          class="icons mt-10 mx-8 flex justify-center gap-[5vw] text-2xl text-stone-500 before:content before:h-[1px] before:w-full before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-4)] to-90% before:absolute before:left-0 before:bottom-0 relative"
+          class="icons mt-10 mx-8 flex justify-between text-2xl text-stone-500 before:content before:h-[1px] before:w-full before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-4)] to-90% before:absolute before:left-0 before:bottom-0 relative"
         >
-          <i
-            class="fa-solid fa-tablet-screen-button p-3 rounded-t-lg bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-100% text-white"
+          <div
+            class="icon flex flex-col items-center gap-1 p-3 rounded-t-lg bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-3)] to-90% text-white md:p-5 lg:px-8 lg:py-6"
             onclick="changeSlide()"
-          ></i>
-          <i
-            class="fa-solid fa-cart-shopping p-2.5 rounded-t-lg"
+          >
+            <i class="fa-solid fa-tablet-screen-button"></i>
+            <h4 class="text-[16px] tracking-widest hidden lg:block">
+              Website Design
+            </h4>
+          </div>
+          <div
+            class="icon flex flex-col items-center gap-1 p-3 rounded-t-lg md:p-5 lg:px-8 lg:py-6"
             onclick="changeSlide()"
-          ></i>
-          <i
-            class="fa-solid fa-arrow-up-right-dots p-2.5 rounded-t-lg"
+          >
+            <i class="fa-solid fa-cart-shopping rounded-t-lg"></i>
+            <h4 class="text-[16px] tracking-widest hidden lg:block">
+              E-Commerce
+            </h4>
+          </div>
+          <div
+            class="icon flex flex-col items-center gap-1 p-3 rounded-t-lg md:p-5 lg:px-8 lg:py-6"
             onclick="changeSlide()"
-          ></i>
-          <i
-            class="fa-solid fa-wifi p-2.5 rounded-t-lg"
+          >
+            <i class="fa-solid fa-arrow-up-right-dots rounded-t-lg"></i>
+            <h4 class="text-[16px] tracking-widest hidden lg:block">SEO</h4>
+          </div>
+          <div
+            class="icon flex flex-col items-center gap-1 p-3 rounded-t-lg md:p-5 lg:px-8 lg:py-6"
             onclick="changeSlide()"
-          ></i>
-          <i
-            class="fa-regular fa-image p-3 rounded-t-lg"
+          >
+            <i class="fa-solid fa-wifi rounded-t-lg"></i>
+            <h4 class="text-[16px] tracking-widest hidden lg:block">Hosting</h4>
+          </div>
+          <div
+            class="icon flex flex-col items-center gap-1 p-3 rounded-t-lg md:p-5 lg:px-8 lg:py-6"
             onclick="changeSlide()"
-          ></i>
+          >
+            <i class="fa-regular fa-image rounded-t-lg"></i>
+            <h4 class="text-[16px] tracking-widest hidden lg:block">
+              Graphic Design
+            </h4>
+          </div>
         </div>
 
         <!-- web design -->
@@ -642,17 +689,17 @@
             </h2>
           </div>
           <div
-            class="web-design-info flex flex-col gap-3 px-5 xl:flex-row xl:gap-10"
+            class="web-design-info flex flex-col gap-3 px-5 lg:flex-row lg:items-start xl:gap-10"
           >
             <video
               src="assets/videos/web-design.mp4"
               autoplay
               loop
               muted
-              class="lg:w-[50%]"
+              class="lg:w-[50%] lg:sticky lg:top-0"
             ></video>
             <div class="content flex flex-col gap-4">
-              <p class="mt-2 text-[13px] text-stone-500">
+              <p class="text-[13px] text-stone-500 xl:text-[16px]">
                 As an <b>award-winning London web design agency</b>, we have a
                 phased approach to our web design projects which ensures all
                 aspects of creating a high-performance website are effectively
@@ -662,7 +709,7 @@
                 include:
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Bespoke design and development — Our industry leading websites
                 are designed and developed from scratch in house by our
@@ -670,14 +717,14 @@
                 site builders.
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Without compromise — by custom building all our websites we are
                 able to fulfil all design and functionality requirements without
                 having to comprise on quality.
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Interactive websites — we create websites that animate, respond,
                 and interact producing an engaging user experience through site
@@ -685,14 +732,14 @@
                 WebGL technologies.
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 SEO - We plan, design and develop our websites with careful SEO
                 consideration ensuring they are ready to competitively rank and
                 perform once launched.
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Optimized user experience — During our discovery and wireframing
                 phases we consider your websites user journey, demographics and
@@ -717,17 +764,17 @@
             </h2>
           </div>
           <div
-            class="e-commerce-info flex flex-col gap-3 px-5 xl:flex-row xl:gap-10"
+            class="e-commerce-info flex flex-col gap-3 px-5 lg:flex-row lg:items-start xl:gap-10"
           >
             <video
               src="assets/videos/e-commerce.mp4"
               autoplay
               loop
               muted
-              class="lg:w-[50%]"
+              class="lg:w-[50%] lg:sticky lg:top-0"
             ></video>
             <div class="content flex flex-col gap-4">
-              <p class="mt-2 text-[13px] text-stone-500">
+              <p class="text-[13px] text-stone-500 xl:text-[16px]">
                 We offer industry-leading, enterprise standard e-commerce
                 systems as part of our website services. Our e-commerce websites
                 are fully bespoke, adapted to work seamlessly with your business
@@ -739,26 +786,26 @@
                 and a fully secure customer shopping experience.
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Industry leading, scalable e-commerce systems including
                 Woocommerce & Magento.
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Integrated, SSL Secure payment - accept a range of payments
                 online, including subscriptions, credit / debit cards, and Apple
                 / Android pay.
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Complete control over your site, with easy in-house management
                 of your online store.
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Integration of advanced reporting tools such as Google Analytics
                 to track user behaviour and optimise for revenue/conversions.
@@ -784,16 +831,18 @@
               SEO
             </h2>
           </div>
-          <div class="SEO-info flex flex-col gap-3 px-5 xl:flex-row xl:gap-10">
+          <div
+            class="SEO-info flex flex-col gap-3 px-5 lg:flex-row lg:items-start xl:gap-10"
+          >
             <video
               src="assets/videos/SEO.mp4"
               autoplay
               loop
               muted
-              class="lg:w-[50%]"
+              class="lg:w-[50%] lg:sticky lg:top-0"
             ></video>
             <div class="content flex flex-col gap-4">
-              <p class="mt-2 text-[13px] text-stone-500">
+              <p class="text-[13px] text-stone-500 xl:text-[16px]">
                 Unlike many specialist marketing & SEO companies, as a
                 full-service London agency we have the advantage of being able
                 to carry out a successful digital marketing campaign, completely
@@ -803,30 +852,30 @@
                 efficiently as possible.
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Certified Google Partners, passionate about achieving real
                 results for your business.
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Tailored digital marketing solutions, unique to your
                 requirements.
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Full onsite optimisation for search engine indexing & ranking.
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Appear in Google page results for the searches that are
                 important to you.
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Transparent monthly reporting on progress, rankings, conversions
                 & tangible ROI.
@@ -853,55 +902,55 @@
             </h2>
           </div>
           <div
-            class="hosting-info flex flex-col gap-3 px-5 xl:flex-row xl:gap-10"
+            class="hosting-info flex flex-col gap-3 px-5 lg:flex-row lg:items-start xl:gap-10"
           >
             <video
               src="assets/videos/hosting.mp4"
               autoplay
               loop
               muted
-              class="lg:w-[50%]"
+              class="lg:w-[50%] lg:sticky lg:top-0"
             ></video>
             <div class="content flex flex-col gap-4">
-              <p class="mt-2 text-[13px] text-stone-500">
+              <p class="text-[13px] text-stone-500 xl:text-[16px]">
                 Our servers load websites up to 5x faster (TTFB) than shared
                 hosting services and make use of cloud flare DNS which ensures
                 that your site doesn't go down, is kept secure, and consistently
                 runs quickly via caching.
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Amazon S3 Backups.
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Free Setup - We move your site over and perform all technical
                 set up.
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Daily Antivirus Scans of the server
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Managed Firewall to prevent hackers and spam
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 24 × 7 External Monitoring
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 24 × 7 UK support
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 SLA - Service Level Agreement for your peace of mind.
               </p>
@@ -927,17 +976,17 @@
             </h2>
           </div>
           <div
-            class="graphic-design-info flex flex-col gap-3 px-5 xl:flex-row xl:gap-10"
+            class="graphic-design-info flex flex-col gap-3 px-5 lg:flex-row lg:items-start xl:gap-10"
           >
             <video
               src="assets/videos/graphic-design.mp4"
               autoplay
               loop
               muted
-              class="lg:w-[50%]"
+              class="lg:w-[50%] lg:sticky lg:top-0"
             ></video>
             <div class="content flex flex-col gap-4">
-              <p class="mt-2 text-[13px] text-stone-500">
+              <p class="text-[13px] text-stone-500 xl:text-[16px]">
                 We have a dedicated London based design team who are experts in
                 creating impactful UI/UX optimised design, stunning logos and
                 considered branding. As a full service London agency we’re able
@@ -945,37 +994,37 @@
                 solution.
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Brand Design
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Graphic Design
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Logo Design
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Print Design work
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Business Stationery
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Brand Guidelines
               </p>
               <p
-                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative"
+                class="text-[13px] text-stone-500 ml-6 before:content before:h-0.5 before:w-2 before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-3)] to-90% before:absolute before:-left-5 before:top-2.5 relative xl:text-[16px]"
               >
                 Internal & External communications (emails, brochures,
                 presentations (PowerPoint), infographics, advertising creative,
@@ -1004,7 +1053,7 @@
 
       <!-- Our Bespoke Websites Section -->
       <div
-        class="our-bespoke-websites mt-24 flex flex-col items-center gap-2 md:mt-32 md:px-12 xl:mt-44 xl:px-24"
+        class="our-bespoke-websites mt-24 px-5 flex flex-col items-center gap-2 md:mt-32 md:px-12 xl:mt-44 xl:px-24"
         id="our-bespoke-websites"
       >
         <h4 class="text-[14px] tracking-widest text-stone-500">
@@ -1015,30 +1064,195 @@
         >
           INCLUDE THE FOLLOWING
         </h2>
+
+        <!-- slider -->
         <div
-          class="our-bespoke-websites-info mt-7 px-5 flex flex-col items-center gap-2 object-cover md:w-[50%]"
+          class="slider relative rounded-md w-full h-[310px] sm:w-[70%] xl:w-[55%]"
         >
-          <img
-            src="assets/images/our-bespoke-websites-1.png"
-            alt=""
-            class="h-40 object-cover"
-          />
-          <h5 class="mt-1 text-[14px] tracking-widest text-stone-500">
-            BESPOKE DESIGN
-          </h5>
-          <p class="text-[13px] text-stone-500 text-center">
-            All of our websites are carefully designed in Adobe Creative Suite
-            before being coded by our experienced London based web developers,
-            ensuring your site is a unique and bespoke design. We have a
-            collaborative design process, which considers our client's feedback
-            at every stage, ensuring 100% design satisfaction.
-          </p>
+          <!-- slides -->
+          <div class="slides">
+            <div class="slide w-full h-full hidden">
+              <div
+                class="bespoke-design-info mt-7 px-5 flex flex-col items-center gap-3 object-cover"
+              >
+                <img
+                  src="assets/images/our-bespoke-websites-1.png"
+                  alt=""
+                  class="h-40 object-cover"
+                />
+                <h5 class="mt-1 text-[14px] tracking-widest text-stone-500">
+                  BESPOKE DESIGN
+                </h5>
+                <p
+                  class="text-[13px] text-stone-500 text-center xl:text-[16px]"
+                >
+                  All of our websites are carefully designed in Adobe Creative
+                  Suite before being coded by our experienced London based web
+                  developers, ensuring your site is a unique and bespoke design.
+                  We have a collaborative design process, which considers our
+                  client's feedback at every stage, ensuring 100% design
+                  satisfaction.
+                </p>
+              </div>
+            </div>
+            <div class="slide w-full h-full hidden">
+              <div
+                class="mobile-optimized-info mt-7 px-5 flex flex-col items-center gap-3 object-cover"
+              >
+                <img
+                  src="assets/images/our-bespoke-websites-2.png"
+                  alt=""
+                  class="h-40 object-cover"
+                />
+                <h5 class="mt-1 text-[14px] tracking-widest text-stone-500">
+                  MOBILE OPTIMIZED
+                </h5>
+                <p
+                  class="text-[13px] text-stone-500 text-center xl:text-[16px]"
+                >
+                  Every website we develop works seamlessly on mobile & tablets,
+                  ensuring excellent mobile performance utilizing responsive web
+                  design via CSS/JS technology. This establishes an optimal
+                  viewing experience across all devices, fully engaging both
+                  your desktop & mobile customers.
+                </p>
+              </div>
+            </div>
+            <div class="slide w-full h-full hidden">
+              <div
+                class="SEO-optimized-info mt-7 px-5 flex flex-col items-center gap-3 object-cover"
+              >
+                <img
+                  src="assets/images/our-bespoke-websites-3.png"
+                  alt=""
+                  class="h-40 object-cover"
+                />
+                <h5 class="mt-1 text-[14px] tracking-widest text-stone-500">
+                  SEO OPTIMIZED
+                </h5>
+                <p
+                  class="text-[13px] text-stone-500 text-center xl:text-[16px]"
+                >
+                  As part of our website development process, our London based
+                  SEO team will perform onsite optimization to ensure that your
+                  website is ranking for the right keywords, and employ best
+                  practices for user experience - positioning your site to
+                  generate enquiries and sales. Post-launch, we also offer a
+                  bespoke SEO strategy so you know what steps to take next.
+                </p>
+              </div>
+            </div>
+            <div class="slide w-full h-full hidden">
+              <div
+                class="CMS-info mt-7 px-5 flex flex-col items-center gap-3 object-cover"
+              >
+                <img
+                  src="assets/images/our-bespoke-websites-4.png"
+                  alt=""
+                  class="h-40 object-cover"
+                />
+                <h5 class="mt-1 text-[14px] tracking-widest text-stone-500">
+                  CMS
+                </h5>
+                <p
+                  class="text-[13px] text-stone-500 text-center xl:text-[16px]"
+                >
+                  We are a WordPress CMS web specialist, which allows us to
+                  adapt and customize a powerful and future proof open source
+                  CMS to suit your needs. We make use of visual editors to
+                  create the content of the website's we develop, which allows
+                  our clients to easily manage and update their website once
+                  delivered.
+                </p>
+              </div>
+            </div>
+            <div class="slide w-full h-full hidden">
+              <div
+                class="e-commerce-info mt-7 px-5 flex flex-col items-center gap-3 object-cover"
+              >
+                <img
+                  src="assets/images/our-bespoke-websites-5.png"
+                  alt=""
+                  class="h-40 object-cover"
+                />
+                <h5 class="mt-1 text-[14px] tracking-widest text-stone-500">
+                  E-COMMERCE
+                </h5>
+                <p
+                  class="text-[13px] text-stone-500 text-center xl:text-[16px]"
+                >
+                  We offer industry-leading, secure, enterprise standard e-
+                  commerce systems as part of our website development. We can
+                  adapt e-commerce systems, including Magento and WooCommerce,
+                  to work seamlessly with your business model, whether it be
+                  drop shipping, virtual products, or international sales.
+                </p>
+              </div>
+            </div>
+            <div class="slide w-full h-full hidden">
+              <div
+                class="immersive-effects-info mt-7 px-5 flex flex-col items-center gap-3 object-cover"
+              >
+                <img
+                  src="assets/images/our-bespoke-websites-6.png"
+                  alt=""
+                  class="h-40 object-cover"
+                />
+                <h5 class="mt-1 text-[14px] tracking-widest text-stone-500">
+                  IMMERSIVE EFFECTS
+                </h5>
+                <p
+                  class="text-[13px] text-stone-500 text-center xl:text-[16px]"
+                >
+                  Our London based web development team code interactive
+                  elements into your website, to engage and inspire your
+                  visitors. Our web design team utilize cutting edge
+                  technologies including jQuery, Canvas, and Webgl to deliver an
+                  engaging immersive website experience.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- buttons -->
+          <button
+            class="prev absolute top-[47%] text-lg left-0 text-stone-500 opacity-40 xl:text-xl"
+            onclick="$.fn.prevSlide()"
+          >
+            <i class="fa-solid fa-arrow-left-long"></i>
+          </button>
+          <button
+            class="next absolute top-[47%] text-lg right-0 text-stone-500 opacity-40 xl:text-xl"
+            onclick="$.fn.nextSlide()"
+          >
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+          <!-- slide index -->
+          <div class="slide-index">
+            <div
+              class="circle absolute -bottom-16 left-[39%] h-[8px] w-[8px] rounded-full bg-stone-300 hidden sm:block"
+            ></div>
+            <div
+              class="circle absolute -bottom-16 left-[43%] h-[8px] w-[8px] rounded-full bg-stone-300 hidden sm:block"
+            ></div>
+            <div
+              class="circle absolute -bottom-16 left-[47%] h-[8px] w-[8px] rounded-full bg-stone-300 hidden sm:block"
+            ></div>
+            <div
+              class="circle absolute -bottom-16 right-[48%] h-[8px] w-[8px] rounded-full bg-stone-300 hidden sm:block"
+            ></div>
+            <div
+              class="circle absolute -bottom-16 right-[44%] h-[8px] w-[8px] rounded-full bg-stone-300 hidden sm:block"
+            ></div>
+            <div
+              class="circle absolute -bottom-16 right-[40%] h-[8px] w-[8px] rounded-full bg-stone-300 hidden sm:block"
+            ></div>
+          </div>
         </div>
       </div>
 
       <!-- our process section -->
       <div
-        class="our-process mt-20 px-5 py-8 flex flex-col gap-4 relative bg-[#f3f4f5] md:mt-32 md:px-12 xl:mt-44 xl:px-24 xl:py-0"
+        class="our-process mt-36 px-5 py-8 flex flex-col gap-4 relative bg-[#f3f4f5] md:mt-52 md:px-12 xl:mt-56 xl:px-24 xl:py-0"
         id="our-process"
       >
         <svg
@@ -1057,7 +1271,9 @@
         >
           OUR WEBSITE DESIGN PROCESS
         </h2>
-        <p class="text-[13px] text-stone-500 lg:w-[65%] xl:w-[50%]">
+        <p
+          class="text-[13px] text-stone-500 lg:w-[65%] xl:w-[56%] xl:text-[16px]"
+        >
           Our expert London based web design team follow a bespoke process from
           stan to finish, providing you with unique website designs tailored to
           your specific requirements-
@@ -1079,7 +1295,7 @@
               class="h-20 object-cover"
             />
             <h5 class="text-stone-600 tracking-widest">1 DISCOVERY</h5>
-            <p class="text-[14px] text-stone-500">
+            <p class="text-[14px] text-stone-500 xl:text-[16px]">
               Our team will perform research and discovery to plan and inform
               the phases of the project.
             </p>
@@ -1093,7 +1309,7 @@
               class="h-20 object-cover"
             />
             <h5 class="text-stone-600 tracking-widest">2 WIREFRAMING</h5>
-            <p class="text-[14px] text-stone-500">
+            <p class="text-[14px] text-stone-500 xl:text-[16px]">
               Prior to prototyping the designs, we will create wireframes which
               plan out the structure and user flow of your website.
             </p>
@@ -1107,7 +1323,7 @@
               class="h-20 object-cover"
             />
             <h5 class="text-stone-600 tracking-widest">3 DESIGN</h5>
-            <p class="text-[14px] text-stone-500">
+            <p class="text-[14px] text-stone-500 xl:text-[16px]">
               In a collaborative process from end-to-end, the design of the
               website is created from scratch in Photoshop.
             </p>
@@ -1121,7 +1337,7 @@
               class="h-20 object-cover"
             />
             <h5 class="text-stone-600 tracking-widest">4 DEVELOPMENT</h5>
-            <p class="text-[14px] text-stone-500">
+            <p class="text-[14px] text-stone-500 xl:text-[16px]">
               The final designs from the design phase are used to develop a web
               version of the site on our staging server.
             </p>
@@ -1135,7 +1351,7 @@
               class="h-20 object-cover"
             />
             <h5 class="text-stone-600 tracking-widest">5 CONTENT</h5>
-            <p class="text-[14px] text-stone-500">
+            <p class="text-[14px] text-stone-500 xl:text-[16px]">
               The website functionality is developed and content is populated as
               outlined within the project spec.
             </p>
@@ -1149,7 +1365,7 @@
               class="h-20 object-cover"
             />
             <h5 class="text-stone-600 tracking-widest">6 TESTING</h5>
-            <p class="text-[14px] text-stone-500">
+            <p class="text-[14px] text-stone-500 xl:text-[16px]">
               The website undergoes a full Q&A and interoperability testing
               procedure, ensuring optimal performance.
             </p>
@@ -1324,7 +1540,7 @@
         >
           WEBSITE DESIGN COST CALCULATOR
         </h2>
-        <p class="text-[14px] text-white text-center xl:w-[65%]">
+        <p class="text-[14px] text-white text-center xl:w-[65%] xl:text-[16px]">
           Use our interactive web design cost calculator tool to plan your
           website design project, and receive a free estimate / proposal from
           our London based team for your web design project.
@@ -1364,42 +1580,42 @@
         id="contact-us"
       >
         <h4 class="text-lg font-semibold tracking-wider text-stone-500">
-          INTERESTED IN DISCUSSING A PROJECT WITH US?
+          INTERESTED IN DISCUSSING A PROJECT WITH US ?
         </h4>
-        <p class="text-[14px] text-stone-500">
+        <p class="text-[14px] text-stone-500 xl:text-[16px]">
           Do you have a project in mind, that you feel our approach would work
-          well for?
+          well for ?
         </p>
-        <p class="text-[14px] text-stone-500 mb-7">
+        <p class="text-[14px] text-stone-500 mb-7 xl:text-[16px]">
           We're always happy to discuss your project with you and put together a
           free proposal, just fill out the form below or give us a call to get
-          started:
+          started :
         </p>
-        <div class="wrapper lg:flex lg:justify-between">
+        <div class="wrapper md:flex md:justify-between">
           <input
             type="text"
             name=""
             id=""
             required
-            placeholder="What's your name? *"
-            class="border-b border-image outline-none p-2.5 lg:w-[47%]"
+            placeholder="What's your name ? *"
+            class="border-b border-image outline-none p-2.5 w-full md:w-[47%]"
           />
           <input
             type="text"
             name=""
             id=""
-            placeholder="Your company (if applicable)"
-            class="border-b border-image outline-none p-2.5 lg:w-[47%]"
+            placeholder="Your company ( if applicable )"
+            class="border-b border-image outline-none p-2.5 w-full md:w-[47%]"
           />
         </div>
-        <div class="wrapper lg:flex lg:justify-between">
+        <div class="wrapper md:flex md:justify-between">
           <input
             type="text"
             name=""
             id=""
             required
             placeholder="Enter your email *"
-            class="border-b border-image outline-none p-2.5 lg:w-[47%]"
+            class="border-b border-image outline-none p-2.5 w-full md:w-[47%]"
           />
           <input
             type="number"
@@ -1407,7 +1623,7 @@
             id=""
             required
             placeholder="Enter your phone number *"
-            class="border-b border-image outline-none p-2.5 lg:w-[47%]"
+            class="border-b border-image outline-none p-2.5 w-full md:w-[47%]"
           />
         </div>
         <textarea
@@ -1417,8 +1633,8 @@
           rows="4"
           class="border-b border-image outline-none p-2.5"
         ></textarea>
-        <label for="file" class="text-[14px] text-stone-500 mt-2"
-          >Send us your brief (if applicable)</label
+        <label for="file" class="text-[14px] text-stone-500 mt-2 xl:text-[16px]"
+          >Send us your brief ( if applicable )</label
         >
         <input
           type="file"
@@ -1426,10 +1642,12 @@
           id=""
           class="text-[14px] text-stone-500 px-2"
         />
-        <p class="text-[14px] text-stone-500">
-          Accepted file types : jpg, png, pdf, doc, ppt, docx-
+        <p class="text-[14px] text-stone-500 xl:text-[16px]">
+          Accepted file types : jpg , png , pdf , doc , ppt , docx-
         </p>
-        <p class="text-[12px] text-stone-500 mt-2.5 lg:w-[70%] xl:w-[60%]">
+        <p
+          class="text-[12px] text-stone-500 mt-2.5 lg:w-[70%] xl:w-[60%] xl:text-[16px]"
+        >
           This form collects your contact information so that we can correspond
           with you. Check out our
           <button
@@ -1444,7 +1662,7 @@
         >
           SEND YOUR ENQUIRY
         </button>
-        <h5 class="text-stone-500 text-sm font-semibold">
+        <h5 class="text-stone-500 text-sm font-semibold xl:text-[16px] xl:mt-3">
           Tel : (+44)
           <a
             href="#"
@@ -1452,7 +1670,7 @@
             >0207 870 5763</a
           >
         </h5>
-        <h5 class="text-stone-500 text-sm font-semibold">
+        <h5 class="text-stone-500 text-sm font-semibold xl:text-[16px]">
           Tel : +1
           <a
             href="#"
@@ -1460,7 +1678,7 @@
             >(217) 372 7740</a
           >
         </h5>
-        <h5 class="text-stone-500 text-sm font-semibold">
+        <h5 class="text-stone-500 text-sm font-semibold xl:text-[16px]">
           Email :
           <a
             href="#"
@@ -1501,7 +1719,9 @@
           >
             QUICK LINKS
           </h4>
-          <ul class="text-[13px] text-stone-200 flex justify-evenly gap-14">
+          <ul
+            class="text-[13px] text-stone-200 flex justify-evenly gap-14 xl:text-[15px]"
+          >
             <ul class="flex flex-col gap-5">
               <li>Project Planner</li>
               <li>About CBD</li>
@@ -1522,15 +1742,15 @@
       <div
         class="footer-bottom px-7 py-8 flex items-center flex-wrap gap-5 justify-center bg-black w-full xl:justify-between xl:px-24"
       >
-        <h5 class="text-stone-400 text-[12px] text-center leading-6">
+        <h5 class="text-stone-400 text-[12px] text-center leading-6 xl:text-sm">
           &copy; 2024 Creative Brand Design Ltd. I Registered in England
-          No.08757535
+          No.03757735
         </h5>
         <h5
-          class="text-stone-400 text-[12px] text-center tracking-wider flex flex-wrap gap-4 justify-center"
+          class="text-stone-400 text-[12px] text-center tracking-wider flex flex-wrap gap-4 justify-center xl:text-sm xl:gap-7"
         >
           Terms & Conditions | Privacy Policy | Cookie Policy
-          <div class="socials text-lg text-stone-500 flex gap-5">
+          <div class="socials text-lg text-stone-500 flex gap-5 xl:gap-7">
             <i class="fa-brands fa-x-twitter"></i>
             <i class="fa-brands fa-facebook-f"></i>
             <i class="fa-brands fa-linkedin-in"></i>
@@ -1552,5 +1772,8 @@
 
     <!-- our services -->
     <script src="JavaScript/our-services.js"></script>
+
+    <!-- our-bespoke-websites-slider -->
+    <script src="JavaScript/our-bespoke-websites-slider.js"></script>
   </body>
 </html>
