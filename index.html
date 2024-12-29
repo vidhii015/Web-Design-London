@@ -40,7 +40,7 @@
         width: 100%;
         height: 93vh;
         background-color: #f1ebec00;
-        background: linear-gradient(
+        background-image: linear-gradient(
           to top right,
           var(--gradient-color-1) 15%,
           var(--gradient-color-2) 40%,
@@ -60,6 +60,17 @@
             var(--gradient-color-4) 100%
           )
           1;
+      }
+
+      /* our services section icon css */
+      .icon-active {
+        background-image: linear-gradient(
+          to bottom right,
+          var(--gradient-color-1) 5%,
+          var(--gradient-color-2) 30%,
+          var(--gradient-color-3) 95%
+        );
+        color: white;
       }
 
       .slide.active {
@@ -140,48 +151,48 @@
       >
         <a
           href="#about-us"
-          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70"
+          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70 hidden"
           >ABOUT US</a
         >
         <a
           href="#projects-section"
-          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70"
+          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70 hidden"
           >PROJECTS</a
         >
         <a
           href="#brand-design-team"
-          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70"
+          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70 hidden"
           >OUR TEAM</a
         >
         <a
           href="#our-services"
-          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70"
+          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70 hidden"
           >OUR SERVICES</a
         >
         <a
           href="#our-bespoke-websites"
-          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70"
+          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70 hidden"
         >
           OUR BESPOKE WEBSITE</a
         >
         <a
           href="#our-process"
-          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70"
+          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70 hidden"
           >OUR PROCESS</a
         >
         <a
           href="#our-news"
-          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70"
+          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70 hidden"
           >OUR NEWS</a
         >
         <a
           href="#cost-calculator"
-          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70"
+          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70 hidden"
           >COST CALCULATOR</a
         >
         <a
           href="#contact-us"
-          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70"
+          class="bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent hover:opacity-70 hidden"
           >CONTACT US</a
         >
       </nav>
@@ -324,7 +335,7 @@
 
       <!-- projects-section -->
       <div
-        class="projects-section mt-20 py-8 flex flex-col items-center relative bg-[#f3f4f5] md:mt-32 xl:py-0 xl:mt-48"
+        class="projects-section mt-20 py-8 flex flex-col items-center relative bg-[#f6f6f6] md:mt-32 xl:py-0 xl:mt-48"
         id="projects-section"
       >
         <svg
@@ -333,7 +344,7 @@
           class="absolute -z-10 -top-12 -rotate-3 md:-top-28 xl:-top-40"
         >
           <path
-            fill="#f3f4f5"
+            fill="#f6f6f6"
             fill-opacity="1"
             d="M0,96L60,106.7C120,117,240,139,360,128C480,117,600,75,720,69.3C840,64,960,96,1080,101.3C1200,107,1320,85,1380,74.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
           ></path>
@@ -407,7 +418,7 @@
           class="absolute -z-10 -bottom-16 md:-bottom-32 xl:-bottom-52 xl:rotate-3"
         >
           <path
-            fill="#f3f4f5"
+            fill="#f6f6f6"
             fill-opacity="1"
             d="M0,256L48,240C96,224,192,192,288,192C384,192,480,224,576,218.7C672,213,768,171,864,160C960,149,1056,171,1152,160C1248,149,1344,107,1392,85.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
           ></path>
@@ -608,7 +619,7 @@
 
       <!-- our services section -->
       <div
-        class="our-services mt-24 py-8 relative bg-[#f3f4f5] md:mt-32 md:px-12 xl:mt-44 xl:py-0 xl:px-24"
+        class="our-services mt-24 py-8 relative bg-[#f6f6f6] md:mt-32 md:px-12 xl:mt-44 xl:py-0 xl:px-24"
         id="our-services"
       >
         <svg
@@ -617,7 +628,7 @@
           class="absolute -z-10 -top-12 left-0 -rotate-3 md:-top-28 xl:-top-40 xl:-rotate-0"
         >
           <path
-            fill="#f3f4f5"
+            fill="#f6f6f6"
             fill-opacity="1"
             d="M0,96L60,106.7C120,117,240,139,360,128C480,117,600,75,720,69.3C840,64,960,96,1080,101.3C1200,107,1320,85,1380,74.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
           ></path>
@@ -634,8 +645,7 @@
           class="icons mt-10 mx-8 flex justify-between text-2xl text-stone-500 before:content before:h-[1px] before:w-full before:bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-35% to-[var(--gradient-color-4)] to-90% before:absolute before:left-0 before:bottom-0 relative"
         >
           <div
-            class="icon flex flex-col items-center gap-1 p-3 rounded-t-lg bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-3)] to-90% text-white md:p-5 lg:px-8 lg:py-6"
-            onclick="changeSlide()"
+            class="icon flex flex-col items-center gap-1 p-3 rounded-t-lg md:p-5 lg:px-8 lg:py-6 icon-active cursor-pointer"
           >
             <i class="fa-solid fa-tablet-screen-button"></i>
             <h4 class="text-[16px] tracking-widest hidden lg:block">
@@ -643,8 +653,7 @@
             </h4>
           </div>
           <div
-            class="icon flex flex-col items-center gap-1 p-3 rounded-t-lg md:p-5 lg:px-8 lg:py-6"
-            onclick="changeSlide()"
+            class="icon flex flex-col items-center gap-1 p-3 rounded-t-lg md:p-5 lg:px-8 lg:py-6 cursor-pointer"
           >
             <i class="fa-solid fa-cart-shopping rounded-t-lg"></i>
             <h4 class="text-[16px] tracking-widest hidden lg:block">
@@ -652,22 +661,19 @@
             </h4>
           </div>
           <div
-            class="icon flex flex-col items-center gap-1 p-3 rounded-t-lg md:p-5 lg:px-8 lg:py-6"
-            onclick="changeSlide()"
+            class="icon flex flex-col items-center gap-1 p-3 rounded-t-lg md:p-5 lg:px-8 lg:py-6 cursor-pointer"
           >
             <i class="fa-solid fa-arrow-up-right-dots rounded-t-lg"></i>
             <h4 class="text-[16px] tracking-widest hidden lg:block">SEO</h4>
           </div>
           <div
-            class="icon flex flex-col items-center gap-1 p-3 rounded-t-lg md:p-5 lg:px-8 lg:py-6"
-            onclick="changeSlide()"
+            class="icon flex flex-col items-center gap-1 p-3 rounded-t-lg md:p-5 lg:px-8 lg:py-6 cursor-pointer"
           >
             <i class="fa-solid fa-wifi rounded-t-lg"></i>
             <h4 class="text-[16px] tracking-widest hidden lg:block">Hosting</h4>
           </div>
           <div
-            class="icon flex flex-col items-center gap-1 p-3 rounded-t-lg md:p-5 lg:px-8 lg:py-6"
-            onclick="changeSlide()"
+            class="icon flex flex-col items-center gap-1 p-3 rounded-t-lg md:p-5 lg:px-8 lg:py-6 cursor-pointer"
           >
             <i class="fa-regular fa-image rounded-t-lg"></i>
             <h4 class="text-[16px] tracking-widest hidden lg:block">
@@ -689,7 +695,7 @@
             </h2>
           </div>
           <div
-            class="web-design-info flex flex-col gap-3 px-5 lg:flex-row lg:items-start xl:gap-10"
+            class="web-design-info flex flex-col gap-5 mt-7 px-5 lg:flex-row lg:items-start xl:gap-10"
           >
             <video
               src="assets/videos/web-design.mp4"
@@ -764,7 +770,7 @@
             </h2>
           </div>
           <div
-            class="e-commerce-info flex flex-col gap-3 px-5 lg:flex-row lg:items-start xl:gap-10"
+            class="e-commerce-info flex flex-col gap-5 mt-7 px-5 lg:flex-row lg:items-start xl:gap-10"
           >
             <video
               src="assets/videos/e-commerce.mp4"
@@ -826,13 +832,13 @@
               RESULT DRIVEN
             </h4>
             <h2
-              class="text-2xl tracking-widest font-semibold bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent"
+              class="text-2xl tracking-widest font-semibold mt-2 bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent"
             >
               SEO
             </h2>
           </div>
           <div
-            class="SEO-info flex flex-col gap-3 px-5 lg:flex-row lg:items-start xl:gap-10"
+            class="SEO-info flex flex-col gap-5 mt-7 px-5 lg:flex-row lg:items-start xl:gap-10"
           >
             <video
               src="assets/videos/SEO.mp4"
@@ -896,13 +902,13 @@
               MANAGED SOLUTIONS
             </h4>
             <h2
-              class="text-2xl tracking-widest font-semibold bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent"
+              class="text-2xl tracking-widest font-semibold mt-2 bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent"
             >
               HOSTING SOLUTIONS
             </h2>
           </div>
           <div
-            class="hosting-info flex flex-col gap-3 px-5 lg:flex-row lg:items-start xl:gap-10"
+            class="hosting-info flex flex-col gap-5 mt-7 px-5 lg:flex-row lg:items-start xl:gap-10"
           >
             <video
               src="assets/videos/hosting.mp4"
@@ -970,13 +976,13 @@
               Bespoke & Unique
             </h4>
             <h2
-              class="text-2xl tracking-widest font-semibold bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent"
+              class="text-2xl tracking-widest font-semibold mt-2 bg-gradient-to-br from-[var(--gradient-color-1)] from-10% via-[var(--gradient-color-2)] via-40% to-[var(--gradient-color-4)] to-90% bg-clip-text text-transparent"
             >
               Graphic Design
             </h2>
           </div>
           <div
-            class="graphic-design-info flex flex-col gap-3 px-5 lg:flex-row lg:items-start xl:gap-10"
+            class="graphic-design-info flex flex-col gap-5 mt-7 px-5 lg:flex-row lg:items-start xl:gap-10"
           >
             <video
               src="assets/videos/graphic-design.mp4"
@@ -1044,7 +1050,7 @@
           class="absolute -z-10 -bottom-16 left-0 md:-bottom-32 xl:-bottom-60 xl:rotate-2"
         >
           <path
-            fill="#f3f4f5"
+            fill="#f6f6f6"
             fill-opacity="1"
             d="M0,256L48,240C96,224,192,192,288,192C384,192,480,224,576,218.7C672,213,768,171,864,160C960,149,1056,171,1152,160C1248,149,1344,107,1392,85.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
           ></path>
@@ -1215,13 +1221,13 @@
           </div>
           <!-- buttons -->
           <button
-            class="prev absolute top-[47%] text-lg left-0 text-stone-500 opacity-40 xl:text-xl"
+            class="prev absolute top-[47%] text-lg left-0 p-2 text-stone-500 opacity-40 xl:text-xl"
             onclick="$.fn.prevSlide()"
           >
             <i class="fa-solid fa-arrow-left-long"></i>
           </button>
           <button
-            class="next absolute top-[47%] text-lg right-0 text-stone-500 opacity-40 xl:text-xl"
+            class="next absolute top-[47%] text-lg right-0 p-2 text-stone-500 opacity-40 xl:text-xl"
             onclick="$.fn.nextSlide()"
           >
             <i class="fa-solid fa-arrow-right-long"></i>
@@ -1252,7 +1258,7 @@
 
       <!-- our process section -->
       <div
-        class="our-process mt-36 px-5 py-8 flex flex-col gap-4 relative bg-[#f3f4f5] md:mt-52 md:px-12 xl:mt-56 xl:px-24 xl:py-0"
+        class="our-process mt-36 px-5 py-8 flex flex-col gap-4 relative bg-[#f6f6f6] md:mt-52 md:px-12 xl:mt-56 xl:px-24 xl:py-0"
         id="our-process"
       >
         <svg
@@ -1261,7 +1267,7 @@
           class="absolute -z-10 -top-12 left-0 -rotate-3 md:-top-32 xl:-top-48 xl:-rotate-0"
         >
           <path
-            fill="#f3f4f5"
+            fill="#f6f6f6"
             fill-opacity="1"
             d="M0,96L60,106.7C120,117,240,139,360,128C480,117,600,75,720,69.3C840,64,960,96,1080,101.3C1200,107,1320,85,1380,74.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
           ></path>
@@ -1377,7 +1383,7 @@
           class="absolute -z-10 -bottom-16 left-0 md:-bottom-36 xl:-bottom-56 xl:rotate-3"
         >
           <path
-            fill="#f3f4f5"
+            fill="#f6f6f6"
             fill-opacity="1"
             d="M0,256L48,240C96,224,192,192,288,192C384,192,480,224,576,218.7C672,213,768,171,864,160C960,149,1056,171,1152,160C1248,149,1344,107,1392,85.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
           ></path>
@@ -1771,7 +1777,7 @@
     <script src="JavaScript/swiper.js"></script>
 
     <!-- our services -->
-    <script src="JavaScript/our-services.js"></script>
+    <script src="JavaScript/script.js"></script>
 
     <!-- our-bespoke-websites-slider -->
     <script src="JavaScript/our-bespoke-websites-slider.js"></script>
