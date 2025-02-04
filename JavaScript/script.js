@@ -11,9 +11,6 @@ sidebar.addEventListener("click", () => {
 
   // Toggling opacity
   nav.classList.toggle("opacity-0");
-
-  // Toggling hidden class for links
-  a.forEach((link) => link.classList.toggle("hidden"));
 });
 
 // ----------------------------------------------------------------------
